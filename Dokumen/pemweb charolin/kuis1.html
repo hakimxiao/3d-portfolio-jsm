@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabel dengan Penggabungan Sel</title>
+    <style>
+        table {
+            width: 40%;
+            border-collapse: collapse;
+            background-color: brown; /* Warna latar belakang tabel */
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        .fushia {
+            background-color: fuchsia; /* Warna fushia */
+        }
+        .abu-abu {
+            background-color: yellow; /* Warna abu-abu */
+        }
+        .biru {
+            background-color: blue; /* Warna biru */
+            color: white; /* Warna teks putih untuk kontras */
+        }
+    </style>
+</head>
+<body>
+
+<h2>KUIS TABEL</h2>
+
+<table>
+    <tr>
+        <td colspan="2" class="fushia">Kolom 1 dan 2 Baris 1</td>
+        <td>Kolom 3 Baris 1</td>
+        <td>Kolom 4 Baris 1</td>
+    </tr>
+    <tr>
+        <td>Kolom 1 Baris 2</td>
+        <td rowspan="2" class="brown">Kolom 2 Baris 2 dan 3</td>
+        <td rowspan="2" class="yellow">Kolom 3 Baris 2 dan 3</td>
+        <td>Kolom 4 Baris 2</td>
+    </tr>
+    <tr>
+        <td>Kolom 1 Baris 3</td>
+        <td>Kolom 4 Baris 3</td>
+    </tr>
+    <tr>
+        <td colspan="4" class="biru">Semua Kolom Baris 4</td>
+    </tr>
+</table>
+
+</body>
+</html>
